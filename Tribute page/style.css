@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Harmattan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+  
+}
+#main{
+  max-width:100%;
+  margin:0;
+  font-family: 'Harmattan', sans-serif;
+  display:flex;
+  flex-direction:column;
+  align-content:space-between;
+}
+.header{
+  display:flex;
+  flex-direction:column;
+  text-align:center;
+  font-size:1.3rem;
+  color:#818e99;
+}
+#title{
+  font-size:3rem;
+  color:black;
+}
+#img-div{
+  max-width:1000px;
+  text-align:center;
+  margin:2rem auto;
+  
+  
+}
+#image{
+  max-width:100%;
+  display:block;
+}
+
+.quote{
+  width:100%;
+  text-align:center;
+  background-color:#58636b;
+  font-size:1.5rem;
+  padding:.5rem;
+  font-style: italic;
+  color:white;
+}
+.quote-by{
+  display:flex;
+  justify-content:flex-end;
+  padding:.5rem;
+  font-style: normal;
+}
+.info{
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  background-color:#fafafa;
+  letter-spacing:.09rem;
+  margin:1rem;
+  
+}
+#tribute-info{
+  font-size:1.5rem;
+  letter-spacing:.1rem;
+  border-bottom:.1rem solid black;
+  text-align:center;
+}
+#life-events{
+  list-style-position: inside;
+  padding:1rem;
+}
+.footer{
+  width:100%;
+  text-align:center;
+  background-color:#454545;
+  padding:0px;
+  margin:0px;
+  color:#fff;
+  font-family: 'Roboto', sans-serif;
+  font-size:.8rem;
+  padding:.8rem;
+  
+}
+
+#tribute-link{
+  color:#e584f0;
+  padding-left:.5rem;
+  text-decoration:none;
+}
+@media (min-width:0px) and (max-width:200px){
+  .header{
+  display:flex;
+  flex-direction:column;
+  text-align:center;
+  padding-right:5px;
+  font-size:.9rem;
+  color:#818e99;
+}
+  #title{
+  font-size:1rem;
+  color:black;
+}
+  #img-caption{
+    font-size:13px;
+    width:100%;
+    text-align:center;
+  }
+  .quote{
+  width:100%;
+  text-align:center;
+  background-color:#58636b;
+  font-size:1rem;
+  padding:1rem;
+  font-style: italic;
+  color:white;
+}
+.quote-by{
+  display:flex;
+  justify-content:flex-end;
+  padding:.5rem;
+  font-style: normal;
+}
+  
+}
+@media (min-width:200px) and (max-width:400px){
+
+  .header{
+    padding:1rem;
+  }
+   .quote{
+  text-align:center;
+  background-color:#58636b;
+  font-size:1rem;
+  padding:1rem;
+  font-style: italic;
+  color:white;
+     
+}
+.quote-by{
+  display:flex;
+  justify-content:flex-end;
+  padding:.5rem;
+  font-style: normal;
+}
+  #tribute-info{
+  font-size:1rem;
+  }
+  
+  .footer{
+    font-size:10px;
+  }
+}
