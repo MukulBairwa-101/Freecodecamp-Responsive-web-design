@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Poppins', sans-serif;
+  
+}
+body{
+  background-color:#f2f2f2;
+}
+
+.container{
+  max-width:75%;
+  display:flex;
+  flex-direction:column;
+  margin:2rem auto;
+  background-color:#d9dedd;
+  border:.1rem solid #707070;
+  box-shadow:.02rem .04rem .7rem #707070;
+}
+.header{
+    margin: 0 auto;
+    width: 100%;
+    text-align:center;
+   background-color:black;
+   color:white;
+  font-size:.8rem;
+  padding:.5rem;
+}
+/* style of form   */
+.form-control{
+  max-width:100%;
+  background-color:white;
+  padding:1.5rem;
+}
+#survey-form{
+  display:flex;
+  flex-direction:column;
+  margin-left:1rem;
+}
+.form-input{
+  width:100%;
+  padding:.5rem;
+/*   background-color:blue; */
+  display:flex;
+  justify-content:space-between;
+}
+.form-input>input{
+  width:80%;
+  padding:.5rem;
+  border:.08rem solid #cfcfcf;
+  border-radius:.4rem;
+}
+.form-input>label{
+  color:#545454;
+  font-weight:600;
+  padding:0.5rem;
+}
+#dropdown select{
+  width:100%;
+  padding:.4rem;
+  background-color:#cfd9e3;
+  color:black;
+  margin:1rem 0rem;
+}
+#dropdown select option{
+  background-color:white;
+  color:black;
+}
+#radio-button-group{
+  display:flex;
+  flex-direction:column;
+  margin:.5rem 0rem;
+  padding:.5rem;
+  letter-spacing:.08rem;
+}
+.checkbox-1{
+  margin: 1rem 0rem;
+   letter-spacing:.08rem;
+  
+}
+.bold-text{
+  color:#4c4b52;
+  font-weight:600;
+  margin-bottom:.5rem;
+}
+
+.t-area{
+  display:flex;
+  flex-direction:column;
+  margin:1rem 0rem;
+  padding:0.3rem 0rem;
+  color:#4c4b52;
+}
+button{
+  text-align:center;
+  display:flex;
+  justify-content:center;
+  width:70%;
+  margin: 1rem auto;
+  border:.1rem solid #0b65a1;
+  background-color:#0b65a1;
+  color:white;
+  padding:.3rem;
+  border-radius:.5rem;
+  font-weight:600;
+}
+#submit:hover{
+  background-color:#1589d6;
+  border-color:#1589d6;
+}
+@media (min-width:0px) and (max-width:400px){
+  .container{
+    font-size:.6rem;
+  }
+  .header{
+    font-size:.5rem;
+  }
+  .form-input{
+    display:flex;
+    flex-direction:column;
+    font-size:.7rem;
+  }
+  .form-input>input{
+    width:100%;
+    font-size:.6rem;
+  }
+
+}

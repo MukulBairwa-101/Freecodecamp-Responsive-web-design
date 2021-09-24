@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Survey  Form </title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Tell us whom you want to give Tribute Next Time</p>
+        <p>Take some time to fillup our Survey Form.</p>
+      </div>
+      <div class="form-control">
+        <form id="survey-form">
+          <div class="form-input">
+          <label for ="name" id="name-label" >Name</label>
+          <input id="name" placeholder="Enter Your Name" required >
+            </div>
+          <div class= "form-input">
+           <label for ="email" id="email-label">Email</label>
+          <input id="email" type ="email" placeholder="Enter Your email" required >
+          </div>
+          <div class= "form-input">
+            <label for ="number" id="number-label">Age</label>
+          <input id="number"  type ="number" placeholder="Enter Your Age" min="13" max="90" >
+          </div>
+            <p class ="bold-text">Which option best describes your current role?</p>
+          <div id="dropdown">
+            <select name="Role" id="Role">
+              <option value="" >Select current role.</option> 
+              <option value="volvo">Student</option>
+              <option value="saab">Professional</option>
+              <option value="mercedes">Self Employed</option>
+              <option value="audi">Retired</option>
+              <option value="audi">Other</option>
+            </select>
+          </div>
+          <div id ="radio-button-group"> 
+            <label for ="radio-selector-a" class ="bold-text" >Did you Enjoy our Content?</label>
+         
+            <div>
+              <input type="radio" name="a_name" value="Yes">Yes
+            </div>
+          <div> 
+            <input type="radio" name="a_name" value="No">No
+            </div>
+          <div>  
+            <input type="radio" name="a_name" value="Not-sure">Not                    Sure
+            </div>
+          </div>
+          <div id ="radio-button-group">
+            <p class ="bold-text">Select the category</p>
+            <small>(describes trebuted person belongs to  the area of working)</small>
+            <br />
+            <div>
+             <input type="radio" id="science" name="category" value="science">Education
+            </div>
+            <div>
+             <input type="radio" id="medical" name="category" value="medical">Medic
+            </div>
+            <div>
+             <input type="radio" id="political" name="category" value="political">Political
+            </div>
+            <div>
+             <input type="radio" id="education" name="category" value="education">Education
+            </div>
+            <div>
+             <input type="radio" id="social-service" name="category" value="social-service">Social Worker
+            </div>
+              <div>
+             <input type="radio" id="other" name="category" value="other">Other
+            </div>
+          </div>
+          <div class="checkbox-1">
+            <p class ="bold-text">What would you like to see improved.</p>
+              <input type="checkbox" id="content" name="content" value="content">
+              <label for="content">Content</label><br>
+              <input type="checkbox" id="ux" name="ux" value="ux">
+              <label for="ux">User-Experience</label><br>
+          </div>
+          <div class="t-area">
+          <label for="txtarea" class ="bold-text">have any question,Comment,Or Suggestion feel free to ask .</label>
+          <textarea id="txtarea" name="txtarea" rows="4" cols="50" placeholder ="Enter yor Question,Comment,or Suggestion " >
+        </textarea>
+          </div>
+          <div class="button">
+            <button  id="submit" >Submit</button>
+            </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
