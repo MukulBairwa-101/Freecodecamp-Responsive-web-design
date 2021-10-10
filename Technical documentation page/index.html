@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main id="main-doc">
+        <nav id="navbar">
+          <div class="divider"></div>
+          <header>Go Documentation</header>
+          <ul>
+            <li><a class="nav-link" href="#What_is_Go?">What is Go?</a></li>
+            <li><a class="nav-link" href="#Get_started">Get started</a></li>
+            <li><a class="nav-link" href="#Syntax_of_go">Syntax of go </a></li>
+            <li><a class="nav-link" href="#Fundamentals_of_go">Fundamentals of go </a></li>
+            <li><a class="nav-link" href="#References_of_go">References of go </a></li>
+          </ul>
+        </nav>
+        <div class="content">
+        <section id="What_is_Go?" class="main-section">
+          <header><h2>What is Go?</h2></header>
+          
+            <code></code>
+             <p>
+                  Go is a cross-platform, open source programming language
+      Go can be used to create high-performance applications
+      Go is a fast, statically typed, compiled language that feels like a dynamically typed, interpreted language</p>
+            <p>
+              Go was developed at Google by Robert Griesemer,         Rob Pike, and Ken Thompson in 2007
+              Go's syntax is similar to C++</p>
+                    <h3 id ="sub-heading">What is Go Used For?</h3>
+         <ol>
+            <li>Web development (server-side)</li>
+            <li>Cloud-native development</li>
+          </ol>
+          <code></code>
+        
+        </section>
+          <hr />
+        <section id="Get_started" class="main-section">
+          <header><h2>Get started</h2></header>
+      <!--     <p> -->
+            <code></code>
+            <p>To start using Go, you need two things:</p>
+                <p>A text editor, like VS Code, to write Go code</p>
+                <p>A compiler, like GCC, to translate the Go code into a language that the computer will understand</p>
+               <h3 id ="sub-heading">Go Install
+      </h3>
+          <p>You can find the relevant installation files at <a href="https://golang.org/dl/">https://golang.org/dl/.</a></p>
+                <p>here is the syntax</p>
+      <!--     </p> -->
+          <p>
+            <code class ="code-grid">go version</code>
+               
+          </p>
+           
+        </section>
+          <hr />
+        <section id="Syntax_of_go" class="main-section">
+          <header><h2>Syntax of go</h2></header>
+          <p>
+            <code>A Go file consists of the following parts:</code>
+          </p>
+            <ul class="list">
+            <li>Package declaration</li>
+            <li>Import packages</li>
+            <li>Functions</li>
+            <li>Statements and expressions</li>
+          </ul>
+          <span>
+            <div class ="code-grid">
+              <span>package main</span><br />
+              <span>import("fmt)<span> 
+              <p>func main() {</p>
+              <p>fmt.Println("Hello World!")</p>
+              <p>}</p>
+              </div>
+          </p>
+        </section>
+            <hr />
+        <section id="Fundamentals_of_go" class="main-section">
+          <header><h2> Fundamentals of go</h2> </header>
+          <h3>
+           Comments
+          </h3>
+          <p>A comment is a text that is ignored upon execution.</p>
+          <h5>Go Single-line Comments</h5>
+          <div class="code-grid">
+            <p>func main() {</p>
+            <p>// This is a comment</p>
+            <p>}</p>
+          </div>
+          <h5>Go Multi-line Comments</h5>
+          <div class= "code-grid">
+            <p>func main() {</p>
+            <p>  /* The code below will print Hello World</p>
+        <p>to the screen, and it is amazing */</p>
+            <p>}</p>
+          </div>
+          <h3>
+           Variables
+          </h3>
+          <p>
+            Variables are containers for storing data values.</p>
+          <p>In Go, there are different types of variables, for example:>
+            
+         
+           <ul class="list">
+            <li>int</li>
+            <li>float32</li>
+            <li>string</li>
+            <li>bool</li>
+          </ul>
+          <h3>Go Arrays</h3>
+          <p>In Go, there are two ways to declare an array:</p>
+          <ul class="list">
+            <li>
+              <p>With the var keyword:</p>
+              <div class= "code-grid">
+            <p>var array_name = [length]datatype{values} // here length is defined</p>
+          </div>
+            
+            </li>
+            <li>
+              <p> With the := sign:
+              </p>
+            <div class= "code-grid">
+            <p>
+              array_name := [length]datatype{values} // here length is defined
+            </p>
+          </div>  
+            </li>
+            
+          </ul>
+        </section>
+            <hr />
+        <section id="References_of_go" class="main-section">
+          <header><h2>References of go</h2></header>  
+          <p>For more documentation  go to below link</p>
+          <a href="https://www.w3schools.com/go">https://www.w3schools.com/go</a>
+        </section>
+       </div>
+      </main>      
+</body>
+</html>

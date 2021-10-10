@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+  boz-sizing:border-box;
+  margin:0;
+  padding:0;
+  max-width:100%;
+  font-family: 'Poppins', sans-serif;
+}
+html{
+  scroll-behavior:smooth;
+}
+.wrapper{
+  width:100%;
+
+}
+#navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow:hidden;
+  background-color:black;
+  z-index: 10;
+  display:flex;
+  padding:1rem;
+  justify-content:space-between;
+  color:#079fe6;
+  font-weight:bold;
+  font-size:1.1rem;
+}
+#navbar ul{
+  display:flex;
+}
+#navbar ul li {
+  text-align:center;
+  list-style:none;
+}
+#navbar ul li a{
+  padding-right:1.2rem;
+  text-decoration:none;
+  color:#5a5d5e;
+}
+#navbar ul li a:hover{
+  color:#70b55b; 
+}
+#welcome-section,#projects,#contact{
+/*   margin-top:7rem; */
+  text-align:center;
+  
+  color:#66696e;
+  font-size:1.4rem;
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #000;
+}
+ #pro::before {
+            content: "Software Developer";
+            animation: animate infinite 3s;
+           
+        }
+#pro{
+ animation: animate infinite 15s;
+  color:#fff;
+}
+@keyframes animate{
+  0%{
+    content:"Software Developer"
+  }
+  25%{
+       content:"Frontend Developer"
+  }
+  50%{
+           content:"UI  Developer"
+  }
+  75%{
+    content:"Software Engineer"
+  }
+ 
+}
+
+#welcome-section p span{
+  color:#70b55b;
+}
+#projects{
+  
+  text-align:center;
+  color:#66696e;
+  font-size:1.4rem;
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #fff;
+}
+#projects h3{
+  color:#406cb3;
+  margin-top:2rem;
+}
+#product-card ul {
+  display:flex;
+  width:100%;
+  text-align:center;
+}
+#product-card ul li {
+  list-style:none;
+  border:.1rem solid #e8e8e8;
+  margin:1rem;
+  width:250px;
+  height:100px;
+  font-size:.9rem;
+  padding:2rem;
+   color:#66696e;
+  box-shadow:.1rem .2rem .4rem ;
+}
+#product-card ul li h4{
+  margin-bottom:2rem;
+  height:40px;
+}
+#product-card ul li a{
+ color:#70b55b;
+  text-decoration:none;
+  border:.03rem solid black;
+  padding:.2rem;
+}
+#contact h2{
+    color:#70b55b;
+}
+#social ul{
+  display:flex;
+  font-size:1.1rem;
+} 
+#social ul li {
+  padding:1rem;
+  list-style:none;
+}
+#social a{
+  text-decoration:none;
+  color:#fff;
+  letter-spacing:.1rem;
+}
+#social a:hover{
+  color:#70b55b;
+  border-bottom:.1rem solid #70b55b ;
+}
+.other-link{
+  display:flex;
+  justify-content:space-evenly;
+  font-size:1rem;
+  margin-top:2rem;
+}
+.other-link p, .other-link a{
+  padding:0rem 1rem;
+}
+.other-link a{
+  text-decoration:none;
+  color:#70b55b;
+}
+.copyright{
+  text-align:center;
+  background-color:black;
+ color:#c7c2bf;
+  font-weight:400;
+  letter-spacing:.1rem;
+}
+
+@media (min-width:50px) and (max-width:300px){
+  #navbar, #navbar ul,#projects{
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    font-size:.9rem;
+    
+  }
+  #navbar ul li{
+    padding:.6rem;
+    
+  }
+  #welcome-section{
+    font-size:.7rem;
+    padding-top:5rem;
+    
+  }
+  #projects{
+  margin-top:150px;
+    margin-bottom:150px;
+    
+  }
+  #product-card ul{
+    display:flex;
+    flex-direction:column;
+  }
+  #product-card ul li{
+    width:60%;
+    font-size:.8rem;
+    margin-left:1rem;
+  }#product-card ul li a{
+    width:100%;
+    
+  }
+  .other-link{
+    font-size:.7rem;
+  }
+
+}
+@media (min-width:300px) and (max-width:850px){
+    #product-card ul{
+    display:flex;
+    flex-direction:column;
+  }
+  #projects{
+  margin-top:150px;
+    margin-bottom:150px;
+    
+  }
+}
